@@ -15,7 +15,7 @@ program.arguments("<xml>")
     .option("-c, --code", "output to temporary file and open with Visual Studio Code", true)
     .option("-p, --pretty", "pretty print (formatted)", true)
     .addOption(
-        new Option("-F, --fmt <format>", "output format")
+        new Option("-f, --fmt <format>", "output format")
         .choices(["json", "yaml", "toml"])
         .default("json")
     )
